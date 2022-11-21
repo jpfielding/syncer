@@ -9,10 +9,11 @@ import (
 )
 
 func HandleError(function interface{}, err error) {
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "%v\n", fmtError(function, err))
-		os.Exit(1)
+	if err == nil {
+		return
 	}
+	fmt.Fprintf(os.Stderr, "%v\n", fmtError(function, err))
+	os.Exit(1)
 }
 
 func fmtError(function interface{}, err error) error {
