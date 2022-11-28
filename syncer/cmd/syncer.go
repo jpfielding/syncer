@@ -8,6 +8,7 @@ func NewRoot() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "syncer",
 		Short: "syncer - a CLI to manage cross cloud photos",
+		Long:  "syncer - the long story",
 		Run: func(cmd *cobra.Command, args []string) {
 			// Do Stuff Here
 		},

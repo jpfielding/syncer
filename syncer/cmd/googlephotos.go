@@ -42,7 +42,7 @@ func NewGooglePhotosList() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "list",
 		Short: "list - ",
-		Long:  `list `,
+		Long:  "list ",
 		Run: func(cmd *cobra.Command, args []string) {
 			fmt.Printf("google photos list\n")
 		},
